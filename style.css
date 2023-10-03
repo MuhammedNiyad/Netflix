@@ -1,5 +1,8 @@
 .sec1{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/Netflix-bg.jpg) no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/Netflix-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .inputBox{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), transparent;
