@@ -1,121 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix India - Watch TV Shows Online, Wacth Movies Online</title>
-    <link rel="icon" href="/images/Netflix-badg.png" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix India - Watch TV Shows Online, Wacth Movies Online</title>
+  <link rel="shortcut icon" type="image" href="/images/Netflix-badg.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+
+</style>
+
 <body>
 
-              <!-- Front Page -->
+  <!-- Front Page -->
 
-    <section class="h-screen sec1 ">
+  <section class="h-auto sec1 ">
     <nav class="flex p-5 justify-between md:px-20 lg:px-40 ">
-   <img class="w-20 h-7 md:w-40 md:h-11" src="images/logo.png" alt="">
-   <div class="flex gap-x-2">
+      <img class="w-20 h-7 md:w-40 md:h-11" src="images/logo.png" alt="">
+      <div class="flex gap-x-2">
 
-    <div class="relative inline-block text-left">
-        <div>
-          <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-gray-50 shadow-sm ring-1 ring-inset ring-gray-300" id="menu-button" aria-expanded="true" aria-haspopup="true">
-            Language
-            <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-            </svg>
-          </button>
+        <div class="relative inline-block text-left">
+          <div>
+            <button type="button"
+              class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-gray-50 shadow-sm ring-1 ring-inset ring-gray-300"
+              id="menu-button" aria-expanded="true" aria-haspopup="true">
+              Language
+              <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- <div id="menu-box"
+            class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-0">English</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-1">हिन्दी</a>
+            </div>
+          </div> -->
         </div>
 
-        <!-- <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-          <div class="py-1" role="none">
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">English</a>
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">हिन्दी</a>
-          </div>
-        </div> -->
-      </div>
-      
 
-   <button class="px-3 bg-red-600 text-gray-50 rounded-md md:mb-2">Sign In</button>
-  
-   </div>
+        <button class="px-3 bg-red-600 text-gray-50 rounded-md md:mb-2">Sign In</button>
+
+      </div>
     </nav>
-    <div class="text-white text-center pt-40 px-10">
-        <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl pb-3">Unlimited movies, TV shows and more</h1>
-        <h2 class="text-lg font-normal sm:text-xl md:text-2xl pb-5">Watch anywhere. Cancel anytime.</h2>
-        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Ready to watch? Enter your email to create or restart your membership.</h2>
-        <input class="inputBox w-96 py-3 px-4 mt-5 sm:py-4 rounded-md border border-gray-400" type="text" placeholder="Emile address">
-        <button class="bg-red-600 px-8 sm:py-4 py-3 mt-5 rounded-md font-bold ">Get Started</button>
+    <div class="text-white text-center pt-40 px-10 pb-40">
+      <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl pb-3">Unlimited movies, TV shows and more</h1>
+      <h2 class="text-lg font-normal sm:text-xl md:text-2xl pb-5">Watch anywhere. Cancel anytime.</h2>
+      <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Ready to watch? Enter your email to create or restart your
+        membership.</h2>
+      <input class="inputBox w-72 md:w-96 py-3 px-4 mt-5 sm:py-4 rounded-md border border-gray-400" type="text"
+        placeholder="Emile address">
+      <button class="bg-red-600 px-8 sm:py-4 py-3 mt-5 rounded-md font-bold ">Get Started</button>
     </div>
-    </section>
+  </section>
 
-          <!-- Enjoy on your TV  -->
+  <!-- Enjoy on your TV  -->
 
-    <section class="bg-black border-t-8 border-zinc-800">
-      <div class="py-16 text-white px-8 md:flex md:px-40">
-        <div class="text-center md:text-left md:py-20">
+  <section class="bg-black border-t-8 border-zinc-800">
+    <div class="py-16 text-white px-8 md:flex md:px-40">
+      <div class="text-center md:text-left md:py-20 xl:py-52">
         <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl pb-3">Enjoy on your TV</h1>
-        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
-       </div>
+        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple
+          TV, Blu-ray players and more.</h2>
+      </div>
 
-       <div class=" md:w-full flex justify-center items-center">
+      <div class=" md:w-full flex justify-center items-center md:order-1">
         <img src="/images/feature-1.png" alt="">
-       </div>
-
       </div>
-    </section>
 
-            <!-- Download your shows to watch offline -->
+    </div>
+  </section>
 
-    <section class="bg-black border-t-8 border-zinc-800">
-      <div class="py-16 text-white px-8 md:flex md:px-40">
+  <!-- Download your shows to watch offline -->
 
-        <div class="text-center md:text-left md:py-20">
+  <section class="bg-black border-t-8 border-zinc-800">
+    <div class="py-16 text-white px-8 md:flex md:px-40 ">
+
+      <div class="text-center md:text-left md:py-20 xl:py-52 md:order-last">
         <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl pb-3">Download your shows to watch offline</h1>
-        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Save your favourites easily and always have something to watch.</h2>
-       </div>
+        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Save your favourites easily and always have something to
+          watch.</h2>
+      </div>
 
-       <div class="mt-16 md:w-full flex justify-center items-center">
+      <div class="mt-16 md:w-full flex justify-center items-center ">
         <img src="/images/feature-2.png" alt="">
-       </div>
-
       </div>
-    </section>
 
-          <!-- Watch everywhere -->
+    </div>
+  </section>
 
-    <section class="bg-black border-t-8 border-zinc-800">
-      <div class="py-16 text-white px-8 md:flex md:px-40">
+  <!-- Watch everywhere -->
 
-        <div class="text-center md:text-left md:py-20">
+  <section class="bg-black border-t-8 border-zinc-800">
+    <div class="py-16 text-white px-8 md:flex md:px-40">
+
+      <div class="text-center md:text-left md:py-20 xl:py-52">
         <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl pb-3">Watch everywhere</h1>
-        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
-       </div>
+        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Stream unlimited movies and TV shows on your phone,
+          tablet, laptop, and TV.</h2>
+      </div>
 
-       <div class=" md:w-full flex justify-center items-center">
+      <div class=" md:w-full flex justify-center items-center">
         <img src="/images/feature-3.png" alt="">
-       </div>
-
       </div>
-    </section>
 
-          <!-- Create Profiles for kids -->
+    </div>
+  </section>
 
-    <section class="bg-black border-t-8 border-zinc-800">
-      <div class="py-16 text-white px-8 md:flex md:px-40 ">
+  <!-- Create Profiles for kids -->
 
-        <div id="nyd" class="text-center md:text-left md:py-20">
+  <section class="bg-black border-t-8 border-zinc-800">
+    <div class="py-16 text-white px-8 md:flex md:px-40 ">
+
+      <div class="text-center md:text-left md:py-20 xl:py-52 md:order-last">
         <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl pb-3">Create profiles for kids</h1>
-        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h2>
-       </div>
+        <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Send children on adventures with their favourite
+          characters in a space made just for them—free with your membership.</h2>
+      </div>
 
-       <div id="nyd1" class="md:w-full flex justify-center items-center">
+      <div class="md:w-full flex justify-center items-center">
         <img src="/images/feature-4.png" alt="">
-       </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+
+  <section class="bg-black border-t-8 border-zinc-800">
+    <div class="py-8 text-white px-8 md:flex jestify-center">
+
+      <div class="text-center w-full xl:w-2/3 m-auto">
+        <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl pb-3">Frequently Asked Questions</h1>
+
+        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
+          <div>
+            <h2 class="text-lg md:text-2xl">What is Netflix?</h2>
+          </div>
+          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+        </div>
+        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
+          <div>
+            <h2 class="text-lg md:text-2xl">How much does Netflix cost?</h2>
+          </div>
+          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+        </div>
+        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
+          <div>
+            <h2 class="text-lg md:text-2xl">Where can I watch?</h2>
+          </div>
+          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+        </div>
+        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
+          <div>
+            <h2 class="text-lg md:text-2xl">What can I wacth on Netflix?</h2>
+          </div>
+          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+        </div>
+        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
+          <div>
+            <h2 class="text-lg md:text-2xl">Is Netflix good for kids?</h2>
+          </div>
+          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+        </div>
+        <div class="py-10 ">
+          <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Ready to watch? Enter your email to create or restart
+            your membership.</h2>
+          <input class="inputBox w-72 md:w-96 py-3 px-4 mt-5 sm:py-4 rounded-md border border-gray-400" type="text"
+            placeholder="Emile address">
+          <button class="bg-red-600 px-8 sm:py-4 py-3 mt-5 rounded-md font-bold ">Get Started</button>
+        </div>
 
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- Footer -->
+
+  <footer class="bg-black border-t-8 border-zinc-800">
+    <div class="py-8 text-white px-8 md:flex jestify-center">
+
+      <div class="text-left w-full xl:w-2/3 m-auto">
+        <div class=" font-base text-zinc-500 font-semibold">Questions? Call 000-800-919-1694</div>
+        <div class="text-zinc-500 flex gap-x-2 my-10">
+          <div class="md:flex block">
+            <div class="mx-6">
+              <ul>
+                <li class="my-4"><a href="#">FAQ</a></li>
+                <li class="my-4"><a href="#">Investor Relations</a></li>
+                <li class="my-4"><a href="#">Privacy</a></li>
+                <li class="my-4"><a href="#">Speed Test</a></li>
+              </ul>
+            </div>
+            <div class="mx-6">
+              <ul>
+                <li class="my-4"><a href="#">Help Centre</a></li>
+                <li class="my-4"><a href="#">Jobs</a></li>
+                <li class="my-4"><a href="#">Cookie Preferences</a></li>
+                <li class="my-4"><a href="#">Legal Notices</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:flex block">
+            <div class="mx-6">
+              <ul>
+                <li class="my-4"><a href="#">Account</a></li>
+                <li class="my-4"><a href="#">Ways to Watch</a></li>
+                <li class="my-4"><a href="#">Corporate Information</a></li>
+                <li class="my-4"><a href="#">Only on Netflix</a></li>
+              </ul>
+            </div>
+            <div class="mx-6">
+              <ul>
+                <li class="my-4"><a href="#">Media Centre</a></li>
+                <li class="my-4"><a href="#">Terms of Use</a></li>
+                <li class="my-4"><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="relative inline-block text-left">
+          <div>
+            <button type="button"
+              class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-gray-50 shadow-sm ring-1 ring-inset ring-gray-300"
+              id="menu-button" aria-expanded="true" aria-haspopup="true">
+              Language
+              <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- <div
+            class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-0">English</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-1">हिन्दी</a>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="text-zinc-500 my-4">Netflix India</div>
+      </div>
+    </div>
+  </footer>
 
 </body>
+<!-- <script>
+  const menu = document.getElementById("menu-button")
+  const menuBox = document.getElementById("menu-box")
+  menu.addEventListener('click', (e) => {
+    // if (!menu.classList.contains("menu-open-again")) {
+    //   menu.classList.add("menu-open-again")
+
+    // } else {
+    //   menu.classList.remove("menu-open-again")
+
+    // }
+    console.log(menuBox, menuBox.style);
+    if (menuBox.classList.contains("none")) {
+      menuBox.classList.add("block")
+    } else {
+      menuBox.classList.add("none")
+    }
+    // console.log(e.target);
+  })
+</script> -->
+
 </html>
