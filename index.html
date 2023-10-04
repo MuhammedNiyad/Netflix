@@ -23,8 +23,9 @@
       <img class="w-20 h-7 md:w-40 md:h-11" src="images/logo.png" alt="">
       <div class="flex gap-x-2">
 
-        <div class="relative inline-block text-left">
-          <div>
+        <div class="relative inline-block text-left" id="dropdownButton">
+          <div
+            onclick="toggleDropdown()">
             <button type="button"
               class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-gray-50 shadow-sm ring-1 ring-inset ring-gray-300"
               id="menu-button" aria-expanded="true" aria-haspopup="true">
@@ -37,20 +38,20 @@
             </button>
           </div>
 
-          <!-- <div id="menu-box"
-            class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          <div
+          id="dropdown"
+            class="absolute right-1 z-10 w-[100px] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
             role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             <div class="py-1" role="none">
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+              <a href="#" class="text-gray-700 block px-4 text-sm hover:bg-blue-500 hover:text-white" role="menuitem" tabindex="-1"
                 id="menu-item-0">English</a>
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+              <a href="#" class="text-gray-700 block px-4 text-sm hover:bg-blue-500 hover:text-white" role="menuitem" tabindex="-1"
                 id="menu-item-1">हिन्दी</a>
             </div>
-          </div> -->
+          </div>
         </div>
 
-
-        <button class="px-3 bg-red-600 text-gray-50 rounded-md md:mb-2">Sign In</button>
+        <button class="px-3 bg-red-600 text-gray-50 rounded-md md:mb-2  hover:bg-red-700 duration-[0.2s]">Sign In</button>
 
       </div>
     </nav>
@@ -61,7 +62,7 @@
         membership.</h2>
       <input class="inputBox w-72 md:w-96 py-3 px-4 mt-5 sm:py-4 rounded-md border border-gray-400" type="text"
         placeholder="Emile address">
-      <button class="bg-red-600 px-8 sm:py-4 py-3 mt-5 rounded-md font-bold ">Get Started</button>
+      <button class="bg-red-600 px-8 sm:py-4 py-3 mt-5 rounded-md font-bold hover:bg-red-700 duration-[0.2s]">Get Started</button>
     </div>
   </section>
 
@@ -144,42 +145,52 @@
       <div class="text-center w-full xl:w-2/3 m-auto">
         <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl pb-3">Frequently Asked Questions</h1>
 
-        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
-          <div>
-            <h2 class="text-lg md:text-2xl">What is Netflix?</h2>
-          </div>
-          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+        <div class="accordion cursor-pointer bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500 duration-[0.4s] select-none">
+          <div><h2 class="text-lg md:text-2xl">What is Netflix?</h2></div>
+          <div class="text-4xl md:text-5xl">+</div>
         </div>
-        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
-          <div>
-            <h2 class="text-lg md:text-2xl">How much does Netflix cost?</h2>
-          </div>
-          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+        <div class="bg-zinc-800 h-auto px-8 flex text-left mt-1 hidden panel">
+          <h2 class="text-lg py-6 font-normal sm:text-xl md:text-2xl">Netflix is a streaming service that offers a wide variety of award-winning TV  shows, movies, anime, documentaries and more – on thousands of internet-connected devices. <br><br>
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</h2>
         </div>
-        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
-          <div>
-            <h2 class="text-lg md:text-2xl">Where can I watch?</h2>
-          </div>
-          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+
+        <div class="accordion cursor-pointer bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500 duration-[0.4s] select-none">
+          <div><h2 class="text-lg md:text-2xl">How much does Netflix cost?</h2></div>
+          <div class="text-4xl md:text-5xl">+</div>
         </div>
-        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
-          <div>
-            <h2 class="text-lg md:text-2xl">What can I wacth on Netflix?</h2>
-          </div>
-          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+        <div class="bg-zinc-800 h-auto px-8 flex text-left mt-1 hidden panel">
+          <h2 class="text-lg py-6 font-normal sm:text-xl md:text-2xl">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</h2>
         </div>
-        <div class="bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500">
-          <div>
-            <h2 class="text-lg md:text-2xl">Is Netflix good for kids?</h2>
-          </div>
-          <div class="text-4xl md:text-5xl"><a href="#">+</a></div>
+
+        <div class="accordion cursor-pointer bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500 duration-[0.4s] select-none">
+          <div><h2 class="text-lg md:text-2xl">Where can I watch?</h2></div>
+          <div class="text-4xl md:text-5xl">+</div>
+        </div>
+        <div class="bg-zinc-800 h-auto px-8 flex text-left mt-1 hidden panel">
+          <h2 class="text-lg py-6 font-normal sm:text-xl md:text-2xl">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. <br><br>
+          You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</h2>
+        </div>
+        <div class="accordion cursor-pointer bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500 duration-[0.4s] select-none">
+          <div><h2 class="text-lg md:text-2xl">What can I wacth on Netflix?</h2></div>
+          <div class="text-4xl md:text-5xl">+</div>
+        </div>
+        <div class="bg-zinc-800 h-auto px-8 flex text-left mt-1 hidden panel">
+          <h2 class="text-lg py-6 font-normal sm:text-xl md:text-2xl">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</h2>
+        </div>
+        <div class="accordion cursor-pointer bg-zinc-800 h-20 px-8 flex justify-between items-center mt-5 hover:bg-zinc-500 duration-[0.4s] select-none">
+          <div> <h2 class="text-lg md:text-2xl">Is Netflix good for kids?</h2></div>
+          <div class="text-4xl md:text-5xl">+</div>
+        </div>
+        <div class="bg-zinc-800 h-auto px-8 flex text-left mt-1 hidden panel">
+          <h2 class="text-lg py-6 font-normal sm:text-xl md:text-2xl">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br><br>
+          Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</h2>
         </div>
         <div class="py-10 ">
           <h2 class="text-lg font-normal sm:text-xl md:text-2xl">Ready to watch? Enter your email to create or restart
             your membership.</h2>
           <input class="inputBox w-72 md:w-96 py-3 px-4 mt-5 sm:py-4 rounded-md border border-gray-400" type="text"
             placeholder="Emile address">
-          <button class="bg-red-600 px-8 sm:py-4 py-3 mt-5 rounded-md font-bold ">Get Started</button>
+          <button class="bg-red-600 px-8 sm:py-4 py-3 mt-5 rounded-md font-bold hover:bg-red-700 duration-[0.2s]">Get Started</button>
         </div>
 
       </div>
@@ -230,8 +241,9 @@
             </div>
           </div>
         </div>
-        <div class="relative inline-block text-left">
-          <div>
+        <div class="relative inline-block text-left" id="dropdownButton2">
+          <div
+          onclick="toggleDropdown2()">
             <button type="button"
               class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-gray-50 shadow-sm ring-1 ring-inset ring-gray-300"
               id="menu-button" aria-expanded="true" aria-haspopup="true">
@@ -244,16 +256,17 @@
             </button>
           </div>
 
-          <!-- <div
-            class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          <div
+          id="dropdown2"
+            class="absolute right-1 z-10 w-[100px] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
             role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             <div class="py-1" role="none">
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+              <a href="#" class="text-gray-700 block px-4 text-sm hover:bg-blue-500 hover:text-white" role="menuitem" tabindex="-1"
                 id="menu-item-0">English</a>
-              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+              <a href="#" class="text-gray-700 block px-4 text-sm hover:bg-blue-500 hover:text-white" role="menuitem" tabindex="-1"
                 id="menu-item-1">हिन्दी</a>
             </div>
-          </div> -->
+          </div>
         </div>
 
         <div class="text-zinc-500 my-4">Netflix India</div>
@@ -262,25 +275,30 @@
   </footer>
 
 </body>
-<!-- <script>
-  const menu = document.getElementById("menu-button")
-  const menuBox = document.getElementById("menu-box")
-  menu.addEventListener('click', (e) => {
-    // if (!menu.classList.contains("menu-open-again")) {
-    //   menu.classList.add("menu-open-again")
+<script>
+  function toggleDropdown(){
+    let dropdown = document.querySelector('#dropdownButton #dropdown');
+    dropdown.classList.toggle('hidden');
+  }
+  function toggleDropdown2(){
+    let dropdown = document.querySelector('#dropdownButton2 #dropdown2');
+    dropdown.classList.toggle('hidden');
+  }
 
-    // } else {
-    //   menu.classList.remove("menu-open-again")
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-    // }
-    console.log(menuBox, menuBox.style);
-    if (menuBox.classList.contains("none")) {
-      menuBox.classList.add("block")
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
     } else {
-      menuBox.classList.add("none")
+      panel.style.display = "block";
     }
-    // console.log(e.target);
-  })
-</script> -->
+  });
+}
+</script>
 
 </html>
